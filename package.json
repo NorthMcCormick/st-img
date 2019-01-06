@@ -1,14 +1,12 @@
 {
-  "name": "st-img",
-  "version": "0.3.0",
+  "name": "st-image-webcomponent",
+  "version": "0.4.2",
   "description": "Web Component built with Stencil to lazy load images",
-  "main": "dist/collection/index.js",
-  "types": "dist/collection/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/stimg.js",
+  "main": "dist/stimg.js",
+  "types": "dist/types/components/st-img/st-img.d.ts",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -16,7 +14,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "0.0.8-9"
+    "@stencil/core": "0.16.1",
+    "@stencil/sass": "0.1.1"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
@@ -24,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgw96/lazy-img.git"
+    "url": "git+https://github.com/northmccormick/lazy-img.git"
   },
   "author": "Justin Willis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jgw96/lazy-img"
+    "url": "https://github.com/northmccormick/lazy-img"
   },
-  "homepage": "https://github.com/jgw96/lazy-img"
+  "homepage": "https://github.com/northmccormick/lazy-img"
 }
